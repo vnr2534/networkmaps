@@ -1,0 +1,44 @@
+{
+    "comment": "This file is expected to be in /etc/networkmaps",
+    "timers": {
+        "usertimeout": 3600,
+        "savediagram": 300
+    },
+    "use_ssl_socket": false,
+    "use_ssl": false,
+    "socket": {
+        "address": "172.31.95.91",
+        "port": 3000,
+        "cert": "/etc/mycerts/netgraph.net.crt",
+        "key": "/etc/mycerts/netgraph.net.key"
+    },
+    "server":
+    {
+        "hostname": "www.masshandra.com",
+        "port": 3000
+    },
+    "staticserver": 
+    {
+        "hostname": "static.masshandra.com",
+        "port": 80
+    },
+    "users":
+    {
+        "path": "/users/"
+    },
+    "diagrams":
+    {
+        "path": "/diagrams/"
+    },
+    "sendmail":
+    {
+        "queue": "/sendmail/queue",
+        "sent": "/sendmail/sent",
+        "server": "smtp.masshandra.com",
+        "port": 465,
+        "is_secured": true,
+        "user": "smtp_user",
+        "password": "smtp_password",
+        "from": "MaSSHandra.com <noreply@admin.masshandra.com>"
+    }
+}

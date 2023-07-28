@@ -1,0 +1,47 @@
+{
+    "comment": "This file is expected to be in /etc/networkmaps",
+    "comment2": "Server running on HTTPS. Serve all static content directly from server.js. No need for a external web server for this purpose",
+    
+    "serve_static_locally": true,
+    "timers": {
+        "usertimeout": 3600,
+        "savediagram": 300
+    },
+    "use_ssl_socket": true,
+    "use_ssl": true,
+    "socket": {
+        "address": "172.31.95.91",
+        "port": 443,
+        "cert": "/etc/mycerts/netgraph.net.crt",
+        "key": "/etc/mycerts/netgraph.net.key"
+    },
+    "server":
+    {
+        "hostname": "www.masshandra.com",
+        "port": 443
+    },
+    "staticserver": 
+    {
+        "hostname": "www.masshandra.com",
+        "port": 443
+    },
+    "users":
+    {
+        "path": "/users/"
+    },	
+    "diagrams":
+    {
+        "path": "/diagrams/"
+    },
+    "sendmail":
+    {
+        "queue": "/sendmail/queue",
+        "sent": "/sendmail/sent",
+        "server": "smtp.masshandra.com",
+        "port": 465,
+        "is_secured": true,
+        "user": "smtp_user",
+        "password": "smtp_password",
+        "from": "MaSSHandra.com <noreply@admin.masshandra.com>"
+    }
+}
