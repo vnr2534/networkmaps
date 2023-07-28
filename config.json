@@ -1,0 +1,27 @@
+{
+    	"server": {
+      	"hostname": "localhost",
+        	"port": 8081
+    	},
+    	"staticserver": {
+        	"hostname": "localhost",
+        	"port": 8081
+    	},
+	"socket": {
+     		"address": "127.0.0.1",
+           "port": 8081
+	},
+    	"sendmail": {
+          	"queue": "C:/networkmaps/lib/networkmaps/sendmail/queue",
+           "sent": "C:/networkmaps/lib/networkmaps/sendmail/sent",
+           "server": "smtp.gmail.com",
+           "port": 465,
+           "is_secured": false,
+           "verify_ssl_cert": true,
+           "user": "",
+           "password": "",
+           "from": ""
+	}
+}
+
+  
