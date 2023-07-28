@@ -1,15 +1,15 @@
 {
     	"server": {
       	"hostname": "localhost",
-        	"port": 8081
+        	"port": 8080
     	},
     	"staticserver": {
         	"hostname": "localhost",
-        	"port": 8081
+        	"port": 8080
     	},
 	"socket": {
      		"address": "127.0.0.1",
-           "port": 8081
+           "port": 8080
 	},
     	"sendmail": {
           	"queue": "C:/networkmaps/lib/networkmaps/sendmail/queue",
